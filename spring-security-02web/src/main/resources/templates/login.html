@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+</head>
+<body>
+<h1>用户登录</h1>
+<form th:action="@{/doLogin}" method="post">
+    用户名：<input name="uname" typeof="text">
+    密码：<input name="passwd" typeof="text">
+    验证码：<input name="kaptcha" type="text"><img alt="" th:src="@{/vc.jpg}"><br>
+    <input type="submit" value="登录">
+</form>
+</body>
+</html>
